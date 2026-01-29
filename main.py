@@ -101,14 +101,6 @@ class BankApp:
         
         exploit_text = """Essayez ces injections SQL dans le champ username:
 
-1. ' OR '1'='1' -- 
-   (Se connecter sans mot de passe)
-
-2. admin' --
-   (Se connecter en tant qu'admin)
-
-3. ' OR 1=1 UNION SELECT id, username, password, 9999 FROM users --
-   (Voir tous les comptes)"""
         
         tk.Label(exploit_frame, text=exploit_text, font=("Arial", 9),
                 bg="#34495e", fg="#ecf0f1", justify="left").pack(pady=5, padx=10)
